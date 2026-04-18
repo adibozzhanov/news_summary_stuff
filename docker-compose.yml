@@ -30,7 +30,9 @@ services:
 
   tunnel:
     image: cloudflare/cloudflared:latest
-    command: tunnel --no-autoupdate --url http://frontend:5173
+    command: tunnel --no-autoupdate run my-news
+    volumes:
+      - ./cloudflared:/etc/cloudflared
     depends_on:
       - frontend
 

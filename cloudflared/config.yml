@@ -1,0 +1,7 @@
+tunnel: c634c089-bc01-431d-bd86-ce99668e93ed
+credentials-file: /etc/cloudflared/c634c089-bc01-431d-bd86-ce99668e93ed.json
+
+ingress:
+  - hostname: news.bzzv.xyz
+    service: http://frontend:5173
+  - service: http_status:404
