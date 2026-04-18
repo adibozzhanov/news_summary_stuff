@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Environment
+.env
+.devenv/
+.direnv/
+
+# Build
+frontend/dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Docker
+mongo-data/
